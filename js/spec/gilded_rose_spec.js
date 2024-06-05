@@ -12,6 +12,8 @@
 10. Add test case for 'Sulfuras, Hand of Ragnaros' when quality is 80
 11. Add test case for '+5 Dexterity Vest' when sell_in is -1
 11. Add test case for '+5 Dexterity Vest' when quality is 0
+13. Add test case for 'Backstage passes to a TAFKAL80ETC concert' when sell_in is 10 days 
+14. Add test case for 'Backstage passes to a TAFKAL80ETC concert' when there are 5 days 
 
 */
 
@@ -39,11 +41,20 @@ describe("Gilded Rose", function() {
   });
 
   it("Sulfuras, Hand of Ragnaros normal", function() {
-items = [ new Item('Sulfuras, Hand of Ragnaros', 0, 80) ];
+    items = [ new Item('Sulfuras, Hand of Ragnaros', 0, 80) ];
     update_quality();
     expect(items[0].sell_in).toEqual(0);
     expect(items[0].quality).toEqual(80);
 
   });
+
+  it("Backstage passes to a TAFKAL80ETC concert normal", function() {
+    items = [ new Item('Backstage passes to a TAFKAL80ETC concert', 15, 20) ];
+    update_quality();
+    expect(items[0].sell_in).toEqual(14);
+    expect(items[0].quality).toEqual(21);
+  });
+
+
 
 });
