@@ -57,7 +57,7 @@ describe("Gilded Rose", function() {
     items = [ new Item('Conjured Mana Cake', 3, 6) ];
     update_quality();
     expect(items[0].sell_in).toEqual(2);
-    expect(items[0].quality).toEqual(5);
+    expect(items[0].quality).toEqual(4);
   });
 
   it("Aged Brie when quality is 50", function() {
