@@ -11,10 +11,8 @@
 9. Add test case for 'Conjured Mana Cake' when quality is 0
 10. Add test case for 'Sulfuras, Hand of Ragnaros' when quality is 80
 11. Add test case for '+5 Dexterity Vest' when sell_in is -1
-11. Add test case for '+5 Dexterity Vest' when quality is 0
-13. Add test case for 'Backstage passes to a TAFKAL80ETC concert' when sell_in is 10 days 
-14. Add test case for 'Backstage passes to a TAFKAL80ETC concert' when there are 5 days 
-
+12. Add test case for 'Backstage passes to a TAFKAL80ETC concert' when sell_in is 10 days 
+13. Add test case for 'Backstage passes to a TAFKAL80ETC concert' when there are 5 days 
 */
 
 describe("Gilded Rose", function() {
@@ -96,5 +94,6 @@ describe("Gilded Rose", function() {
     expect(items[0].sell_in).toEqual(-2);
     expect(items[0].quality).toEqual(18);
   });
+
 
 });
