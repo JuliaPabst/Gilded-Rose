@@ -15,10 +15,11 @@
 
 describe("Gilded Rose", function() {
 
-  it("should foo", function() {
-    items = [ new Item("foo", 0, 0) ];
+  it("+5 Dexterity Vest", function() {
+    items = [ new Item('+5 Dexterity Vest', 10, 20) ];
     update_quality();
-    expect(items[0].name).toEqual("foo");
+    expect(items[0].sell_in).toEqual(10);
+    expect(items[0].quality).toEqual(19);
   });
 
 });
