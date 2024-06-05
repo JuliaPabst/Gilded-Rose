@@ -13,7 +13,7 @@
 11. Add test case for '+5 Dexterity Vest' when sell_in is -1
 12. Add test case for 'Backstage passes to a TAFKAL80ETC concert' when sell_in is 10 days 
 13. Add test case for 'Backstage passes to a TAFKAL80ETC concert' when there are 5 days 
-14. Add case for 'Backstage passes to a TAFKAL80ETC concert' when there are -1 days 
+14. Add case for 'Backstage passes to a TAFKAL80ETC concert' when there are 0 days 
 */
 
 describe("Gilded Rose", function() {
@@ -110,7 +110,7 @@ describe("Gilded Rose", function() {
     expect(items[0].quality).toEqual(23);
   });
 
-  it("Backstage passes to a TAFKAL80ETC concert when there are 5 days", function() {
+  it("Backstage passes to a TAFKAL80ETC concert when there are 0 days", function() {
     items = [ new Item('Backstage passes to a TAFKAL80ETC concert', 0, 20) ];
     update_quality();
     expect(items[0].sell_in).toEqual(-1);
