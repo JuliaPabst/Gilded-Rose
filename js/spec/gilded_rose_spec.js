@@ -13,6 +13,7 @@
 11. Add test case for '+5 Dexterity Vest' when sell_in is -1
 12. Add test case for 'Backstage passes to a TAFKAL80ETC concert' when sell_in is 10 days 
 13. Add test case for 'Backstage passes to a TAFKAL80ETC concert' when there are 5 days 
+14. Add case for 'Backstage passes to a TAFKAL80ETC concert' when there are -1 days 
 */
 
 describe("Gilded Rose", function() {
