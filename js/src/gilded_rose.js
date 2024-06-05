@@ -59,5 +59,8 @@ function update_quality() {
         }
       }
     }
+    console.log(items[i].sell_in);
+    console.log(items[i].quality);
   }
+
 }
