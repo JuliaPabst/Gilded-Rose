@@ -2,7 +2,7 @@
 #TODO 
 1. Add test case for '+5 Dexterity Vest' normal
 2. Add test case for 'Aged Brie' normal
-3. Add test case for 'Elixir of the Mongoose' nomral
+3. Add test case for 'Elixir of the Mongoose' normal
 4. Add test case for 'Sulfuras, Hand of Ragnaros' normal
 5. Add test case for 'Backstage passes to a TAFKAL80ETC concert' normal
 6. Add test case for 'Conjured Mana Cake'  normal 
@@ -30,5 +30,13 @@ describe("Gilded Rose", function() {
     expect(items[0].sell_in).toEqual(1);
     expect(items[0].quality).toEqual(1);
   });
+
+  it("Elixir of the Mongoose normal", function() {
+    items = [ new Item('Elixir of the Mongoose', 5, 7) ];
+    update_quality();
+    expect(items[0].sell_in).toEqual(4);
+    expect(items[0].quality).toEqual(6);
+  });
+
 
 });
